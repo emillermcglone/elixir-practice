@@ -1,3 +1,4 @@
+# Attribution https://github.com/emillermcglone/Spr18memory/blob/master/assets/js/game.jsx
 defmodule Practice.Calc do
   # Get the next operation following order of operations
   def next_op(exp) do
@@ -20,8 +21,8 @@ defmodule Practice.Calc do
       sub != nil ->
         sub
 
-      true ->
-        1
+        # true ->
+        #  1
     end
   end
 
@@ -55,7 +56,7 @@ defmodule Practice.Calc do
           |> Integer.to_string()
 
         start = Enum.split(exp, op_index - 1) |> elem(0)
-        ending = Enum.split(exp, op_index + 1) |> elem(1)
+        ending = Enum.split(exp, op_index + 2) |> elem(1)
 
         eval(start ++ [simple_answer] ++ ending)
     end
