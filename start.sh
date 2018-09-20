@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "x$PROD" == "x" ]]; then 
+if [[ "x$PROD" == "1.0" ]]; then 
 	echo "This script is for starting in production."
 	echo "Use"
 	echo "   mix phx.server"
